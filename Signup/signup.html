@@ -1,0 +1,85 @@
+<!DOCTYPE HTML>
+<html>
+    <head>
+        <title>Gmail Sign In</title>
+        <link rel="stylesheet"
+        type = "text/css"
+        href = "../Signup/signup.css" />
+
+        <link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Roboto:wght@400;500;900&display=swap" rel="stylesheet">
+
+  
+
+<script src="https://cdnjs.cloudflare.com/ajax/libs/axios/0.21.1/axios.min.js"
+integrity="sha512-bZS47S7sPOxkjU/4Bt0zrhEtWx0y0CRkhEp8IckzK+ltifIIE9EMIMTuT/mEzoIMewUINruDBIR/jJnbguonqQ=="
+crossorigin="anonymous"></script>
+
+<script src="https://cdnjs.cloudflare.com/ajax/libs/require.js/2.3.6/require.min.js"
+integrity="sha512-c3Nl8+7g4LMSTdrm621y7kf9v3SDPnhxLNhcjFJbKECVnmZHTdo+IRO05sNLTH/D3vA6u1X32ehoLC7WFVdheg=="
+crossorigin="anonymous"> </script>
+
+<script src="Signup.js"></script>
+
+    </head>
+    <body>
+        <div class = "entirepage">
+                <div class = "container">
+                    <div class="mainPage">
+                        <form class="form" id="login">
+                            <div class="heading">
+                                <img id="h2logo" src="../Images/google_logo.png" width=23% height="23%"/>
+                                <h1>Create your Google Account</h1>
+                                <h4>to continue to Gmail</h4>
+                            </div>
+                            <div class="name">
+                                <div class ="form_input-group">
+                                    <input type="text" class="form_input" id="firstname" autofocus placeholder="First name">
+                                    <div class="helperTextFName"></div>
+                                </div>
+                
+                                <div class ="form_input-group">
+                                    <input type="text" class="form_input" id="lastname" autofocus placeholder="Last name">
+                                    <div class="helperTextLName"></div>
+                                </div>
+                            </div>
+
+                            <div class ="form_input-group">
+                                <input type="text" class="form_input" id="username" autofocus placeholder="Username">
+                                <div class="helperTextUsername"></div>
+                                <p>You can use letters, numbers & periods</p>
+                            </div>
+
+                        <div class="passwordField">
+                                <div class ="form_input-group">
+                                    <input type="password" class="form_input" id="passwordMain1" autofocus placeholder="Password">
+                                    <div class="helperTextMPassword"></div>
+                                </div>
+                
+                                <div class ="form_input-group">
+                                    <input type="password" class="form_input" id="passwordConfirm1" autofocus placeholder="Confirm">
+                                    <div class="helperTextCPassword"></div>
+                                </div>
+                        </div>
+                        <p>Use 8 or more characters with a mix of letters, numbers & symbols</p>
+            
+                        
+                
+                            <div class="lastButton">
+                                <a  href="../Login/login.html" id="createAccount">Sign In Instead</a>
+                                <button class="next">Next</button>
+                            </div>
+                        </form>
+                        
+                    </div>
+                </div>
+
+                <div class ="logo">
+                    <img id="gLogo" src="../Images/account.svg" width="80%" height="50%"/>
+                    <p id="logoText">One account. All of Google</p>
+                    <p id="logoText"> working for you.</p>
+                </div>
+           </div>
+    </body>
+</html>

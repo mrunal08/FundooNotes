@@ -1,0 +1,262 @@
+<!DOCTYPE HTML>
+<html>
+    <head>
+        <link rel="stylesheet"
+            href="../Dashboard/dashboard.css">
+          
+
+            <meta name="viewport" content="width=device-width, initial-scale=1">
+            <link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Montserrat:400,400i,700">
+            <script src="https://kit.fontawesome.com/0b5e883f41.js" crossorigin="anonymous"></script>
+            <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css">
+            <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.2.1/jquery.min.js"></script>
+            <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/js/bootstrap.min.js"></script>
+    
+            <script src="https://code.jquery.com/jquery-3.6.0.js" integrity="sha256-H+K7U5CnXl1h5ywQfKtSj8PCmoN9aaq30gDh27Xc0jk=" crossorigin="anonymous"></script>
+            
+            <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
+
+            <link href="https://fonts.googleapis.com/icon?family=Material+Icons" rel="stylesheet">
+            <script src="https://cdnjs.cloudflare.com/ajax/libs/axios/0.21.1/axios.min.js"
+            integrity="sha512-bZS47S7sPOxkjU/4Bt0zrhEtWx0y0CRkhEp8IckzK+ltifIIE9EMIMTuT/mEzoIMewUINruDBIR/jJnbguonqQ=="
+            crossorigin="anonymous"></script>
+
+            <script src="https://cdnjs.cloudflare.com/ajax/libs/require.js/2.3.6/require.min.js"
+            integrity="sha512-c3Nl8+7g4LMSTdrm621y7kf9v3SDPnhxLNhcjFJbKECVnmZHTdo+IRO05sNLTH/D3vA6u1X32ehoLC7WFVdheg=="
+            crossorigin="anonymous"> </script>
+
+            <script src="Dashboard.js"></script>
+        </head>
+
+    <body>
+        <div class="header">
+            <span class="leftMenu">
+                <div class="menu">
+                    <div id="bar"></div>
+                    <div id="bar"></div>
+                    <div id="bar"></div>
+                </div>
+                <div class="topTitle">
+
+                </div>
+                <!-- <img id="keep" src="https://www.gstatic.com/images/branding/product/1x/keep_2020q4_48dp.png"/>
+                <h2>Keep</h2> -->
+            </span>
+
+           
+
+            <form class="search-start">
+                <button class="fa fa-search search-button"></button>
+                <div class="search-bar-container">
+                    <input class="search-input" autocomplete="off" placeholder="Search" type="text">
+                </div>
+                <button class="fas fa-times close-search"></button>
+            </form> 
+            
+            <span class="rightMenu">
+                <p id="refresh">&#8634;</p>
+                <img id="image2" src="data:image/svg+xml;base64,PHN2ZyB3aWR0aD0iMjRweCIgaGVpZ2h0PSIyNHB4IiB2aWV3Qm94PSIwIDAgMjQgMjQiIHZlcnNpb249IjEuMSIgeG1sbnM9Imh0dHA6Ly93d3cudzMub3JnLzIwMDAvc3ZnIj4KICAgIDxnIGlkPSJsaXN0X3ZpZXdfMjRweCIgc3Ryb2tlPSJub25lIiBzdHJva2Utd2lkdGg9IjEiIGZpbGw9Im5vbmUiIGZpbGwtcnVsZT0iZXZlbm9kZCI+CiAgICAgICAgPHBvbHlnb24gaWQ9ImJvdW5kcyIgZmlsbC1vcGFjaXR5PSIwIiBmaWxsPSIjRkZGRkZGIiBwb2ludHM9IjAgMCAyNCAwIDI0IDI0IDAgMjQiPjwvcG9seWdvbj4KICAgICAgICA8cGF0aCBkPSJNMjAsOSBMNCw5IEw0LDUgTDIwLDUgTDIwLDkgWiBNMjAsMTkgTDQsMTkgTDQsMTUgTDIwLDE1IEwyMCwxOSBaIE0zLDMgQzIuNDUsMyAyLDMuNDUgMiw0IEwyLDEwIEMyLDEwLjU1IDIuNDUsMTEgMywxMSBMMjEsMTEgQzIxLjU1LDExIDIyLDEwLjU1IDIyLDEwIEwyMiw0IEMyMiwzLjQ1IDIxLjU1LDMgMjEsMyBMMywzIFogTTMsMTMgQzIuNDUsMTMgMiwxMy40NSAyLDE0IEwyLDIwIEMyLDIwLjU1IDIuNDUsMjEgMywyMSBMMjEsMjEgQzIxLjU1LDIxIDIyLDIwLjU1IDIyLDIwIEwyMiwxNCBDMjIsMTMuNDUgMjEuNTUsMTMgMjEsMTMgTDMsMTMgWiIgaWQ9Imljb24iIGZpbGw9IiMwMDAwMDAiIGZpbGwtcnVsZT0ibm9uemVybyI+PC9wYXRoPgogICAgPC9nPgo8L3N2Zz4K" width=40px height=40px/>
+                <i id="settingIcon" class="fas fa-cog "></i>
+                <!-- <div class="link">
+                    <a href="#"><span id="dot1" class="glyphicon glyphicon-option-horizontal"></span></a>
+                    <a href="#"><span id="dot2" class="glyphicon glyphicon-option-horizontal"></span></a>
+                    <a href="#"><span id="dot3" class="glyphicon glyphicon-option-horizontal"></span></a>
+                </div> -->
+            </span>
+        </div>
+
+        <div class="navigation">
+            <div class="mainnn tooltip">
+                <h2>Hover over me</h2>
+                <span class="tooltiptext">Tooltip text</span>
+            </div>
+            
+            <div class="sidebarEntire">
+                <div class="sidebar-whole">
+                    <div class="sidebar">
+                        
+                        <div class="sidebar-content bulbContent">
+                            <div class="sideIcon">
+                                <button class="fas fa-lightbulb  icon bulb"></button>
+                            </div>
+                            <div class="sideNote">
+                                <p>Notes</p>
+                            </div>
+                        </div>
+
+                        <div class="sidebar-content">
+                            <div class="sideIcon">
+                                <button class="far fa-bell  icon bell"></button>
+                            </div>
+                            <div class="sideNote">
+                                <p>Reminders</p>
+                            </div>
+                        </div>
+
+                        <div class="sidebar-content">
+                            <div class="sideIcon">
+                                <button class="fas fa-pen icon pen" id="penButton"></button>
+                            </div>
+                            <div class="sideNote" id="pen">Edit Labels</div>
+                        </div>
+
+                        <div class="sidebar-content">
+                            <div class="sideIcon sideArchive">
+                                <button class=" icon material-icons">&#xe149; </button>
+                            </div>
+                            <div class="sideNote">Archive</div>
+                        </div>
+
+                        <div class="sidebar-content">
+                            <div class="sideIcon sideTrash">
+                                <button class="fa fa-trash icon bin" aria-hidden="true"></button>
+                            </div>
+                            <div class="sideNote">Bin</div>
+                        </div>
+
+                        
+                    </div>
+                </div>
+            </div>
+
+
+            <div class="mainPage">
+
+           
+
+            <div class="notes-container">
+                <div class="notes-main">
+                    
+                    <div class="takeNoteWhole">
+                            <input class="search-input-notes titleMain" id="takeNoteTitleInput" autocomplete="off" placeholder="Title" type="text">
+                        <div class="takenoteWithICon">
+                            <div class="OwnerInputColumnMap">
+                                <input class="search-input-notes takeNote" id="takeNoteDescrptionInput" autocomplete="off" placeholder="Take a note..." type="text" >
+                                <div class="owners" id="owners">
+                    
+                                </div>
+                            </div>
+                            <div class="descriptionIcon">
+                                <button class="fas fa-check-square titleIcon list-check "></button>
+                                <button class="fa fa-paint-brush brush titleIcon " ></button>
+                                <button class="fa fa-picture-o gallery titleIcon "></button>
+                            </div>
+                        </div>
+                    
+                       </div>
+                    <div class="mainBottomIcons">
+                        <button class="far fa-bell bottomIcons"></button>
+                        <button class="fa fa-user-plus bottomIcons " id="collab"></button>
+                        
+                        <!-- Color Popup -->
+                         
+                        <div class="colorPopup" >
+                            <!-- here the colour popup will be seen -->
+                            <div class="dropdown">
+                                <div class="dropdown-content">
+                                    <!-- <div class="color" id="color1 #854742" ></div>
+                                    <div class="color" id="color2 #FBBC04" ></div>
+                                    <div class="color" id="color3 #FFF475" ></div>
+                                    <div class="color" id="color4 #CCFF90" ></div>
+                                    <div class="color" id="color5 #A7FFEB" ></div>
+                                    <div class="color" id="color6 #CBF0F8" ></div>
+                                    <div class="color" id="color7 #AECBFA" ></div>
+                                    <div class="color" id="color8 #D7AEFB" ></div>
+                                    <div class="color" id="color9 #FDCFE8" ></div>
+                                    <div class="color" id="color10 #E6C9A8" ></div>
+                                    <div class="color" id="color11 #E8EAED" ></div>
+                                    <div class="color" id="color12 #D7AEFB" ></div> -->
+                                </div>
+                                <button class="bottomIcons colorButtonPopup"><img src="../Images/paint-palette.png" width="22px" height="22px"/></button>
+                                
+                            </div> 
+                              
+                        </div>
+                       
+                        <button class="fa fa-picture-o bottomIcons gal" aria-hidden="true"></button>
+                        <button id="archiveB" class=" archiveButton1 bottomIcons material-icons">&#xe149; </button>
+                        <button class="bottomIcons closeButton">Close</button>
+                    </div>
+                   
+                </div>
+            </div>
+
+
+
+            <div class="Collaborator" id="collabContainer">
+                <div class="collaborator-heading">Collaborators</div>
+                <hr class="collab-line">
+                <div class="collaborator-email">
+                    <div class="userImage">
+                        <img class="profile-img" src="/Images/profile.png" width="30px" height="30px">
+                    </div>
+                    <div class="profile">
+                        <p>Mrunal Gadhave (Owner)
+                            <br>mrunalg96@gmail.com
+                        </p>
+                    </div>
+                    
+                  
+                </div>
+                <div class = "userMapping"></div>
+    
+                <div class="collab-add">
+                    <div class="collab-addp">
+                        <i class="material-icons" id="collab">person_add</i>
+                    </div>
+                    <div class="collab-addInput">
+                        <input type="text" id="collabInput" placeholder="Person or email to share with" autocomplete="off">
+                   
+                        <div class = "colt"></div>
+                    </div>
+                </div>
+    
+                <div class="collab-buttons">
+                    <button type="button" id="cancelButton">Cancel</button>
+                    <button type="button" id="saveButton">Save</button>
+    
+                    </button>
+                </div>
+            </div>
+
+           
+
+
+            <div id="myModal" class="modal">
+
+                <!-- Modal content -->
+                <div class="modal-content" >
+                  <span class="close">&times;</span>
+                  
+                   <div class="info">
+                    <input class="search-input-notes" id="modaltitle" type="text"/>
+                    <input class="search-input-notes-description" id="modalDescription"/>
+                    </div>
+                </div>
+              
+              </div>
+
+            <!-- <div>
+            <h1 data-tooltip="Hello/Goodbye">Ciao</h1>
+            </div> -->
+
+            <div class="modalcontainer">
+                <!-- here modal content will be present -->
+            </div>
+
+            
+            <div class="notes1container">
+                    <!-- here the notes will be seen -->
+            </div>
+            
+            <div class="notes-background">
+                <img class="bulbicon" src="data:image/svg+xml;base64,PHN2ZyB4bWxucz0iaHR0cDovL3d3dy53My5vcmcvMjAwMC9zdmciIHdpZHRoPSIyNCIgaGVpZ2h0PSIyNCIgdmlld0JveD0iMCAwIDI0IDI0IiBmaWxsPSIjMDAwIj4KICA8cGF0aCBkPSJNOSAyMWMwIC41NS40NSAxIDEgMWg0Yy41NSAwIDEtLjQ1IDEtMXYtMUg5djF6bTMtMTlDOC4xNCAyIDUgNS4xNCA1IDljMCAyLjM4IDEuMTkgNC40NyAzIDUuNzRWMTdjMCAuNTUuNDUgMSAxIDFoNmMuNTUgMCAxLS40NSAxLTF2LTIuMjZjMS44MS0xLjI3IDMtMy4zNiAzLTUuNzQgMC0zLjg2LTMuMTQtNy03LTd6bTIuODUgMTEuMWwtLjg1LjZWMTZoLTR2LTIuM2wtLjg1LS42QTQuOTk3IDQuOTk3IDAgMCAxIDcgOWMwLTIuNzYgMi4yNC01IDUtNXM1IDIuMjQgNSA1YzAgMS42My0uOCAzLjE2LTIuMTUgNC4xeiIvPgo8L3N2Zz4K"/>
+                 <h2 id="noteID">Notes you add appear here</h2>
+                
+                  
+             </div
+        </div>
+    </div>
+    </body>
+</html>
+

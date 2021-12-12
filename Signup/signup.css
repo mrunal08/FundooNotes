@@ -1,0 +1,263 @@
+/*.container{
+    width : 100vw;
+    height: 100vh;
+}
+.mainPage{
+    display: flex;
+    flex-direction: column;
+    border: 2px solid red;
+    margin-left: 33%;
+    margin-right: 25%;
+    margin-top: 5%;
+    width: 33%;
+    height:75%;
+}
+
+
+
+
+
+
+
+*/
+
+body{
+    --color-primary : #009579;
+    --color-primary-dark : #007f67;
+    --color-secondary : #252c6a;
+    --color-error : #cc3333;
+    --color-success : #4bb544;
+    --border-radius :4px;
+
+    margin:0;
+    height: 100vh;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    font-size: 18px;
+    
+}
+
+.entirepage{
+    display: flex;
+    border: 2px solid #eeeeee;
+    width: 60vw;
+    height: 90vh;
+}
+.container{
+    width:60%;
+   height: 70%;
+    margin-top:0%;
+    padding-left : 3%;
+  
+    background:#ffffff;
+    
+}
+
+.logo{
+   
+    width:40%;
+    margin-top: 8%;
+    margin-bottom: 0%;
+  
+}
+#gLogo{
+  
+    margin-left: 5%;
+}
+#logoText{
+    
+    margin-bottom: 0px;
+   
+    width: 70%;
+    color: #202124;
+    font-size: 18px;
+    font-weight: 300;
+    text-align: center;
+    font-family: roboto,'Noto Sans Myanmar UI',arial,sans-serif;
+}
+.container , .form_input-group , .lastButton{
+
+    font-family: 'Roboto', sans-serif;
+}
+
+form{
+    margin-left: 0;;
+    padding:5%;
+    
+    height: 100%;
+   
+   
+}
+
+.form_input-group{
+    margin-bottom: 1rem;
+   
+}
+
+.form_input{
+    
+    display: block;
+    width: 100%;
+    padding:0.75rem;
+    margin-left: 50px;
+  border : 2px solid red;
+    box-sizing: border-box;
+    border-radius: var(--border-radius);
+    border: 1px solid #dddddd;
+    outline: none;
+    background: rgb(253, 253, 253);
+    transition: background 0.2s , border-color 0.2s ;
+}
+
+.form_input:focus{
+    border-color: #1a73e8;;
+    border-width: 2px;
+    background: white;
+}
+.heading{
+    padding-left: 10%;
+   
+}
+
+h1{
+    margin-top:1px;
+    font-family: 'Google Sans','Noto Sans Myanmar UI',arial,sans-serif;
+    font-size: 24px;
+    font-weight: 400;
+   
+    
+}
+
+
+h4{
+    color: #202124;
+    font-family: roboto,'Noto Sans Myanmar UI',arial,sans-serif;
+    color: #202124;
+    font-size: 20px;
+    font-weight: 400;
+    letter-spacing: 0.1px;
+    line-height: 1.5;
+    margin-bottom: 5%;
+    margin-left: 2px;
+}
+
+#createAccount{
+    margin-top:5%;
+    padding-left: 10.5%;
+    font-weight: 400;
+    color: #1a73e8;
+    
+}
+.lastButton{
+    display: flex;
+    margin-top:10%;
+    justify-content: space-between;
+    margin-bottom: 5%;
+ 
+}
+h5{
+    
+    padding-left:3%;
+    color: #1a73e8;
+    margin-top: 8%;
+    margin-bottom: 10%;
+}
+
+
+
+
+
+button{
+    background-color: #1a73e8;
+    color: white;
+
+}
+
+.next{
+    width:20%;
+    margin-left: 20px;
+}
+
+.name{
+    display: flex;
+   
+
+}
+
+.passwordField{
+    display: flex;
+    
+    margin-top: 3%;
+}
+
+#username{
+    width:85%;
+    margin-left: 50px;
+    margin-top: 3%;
+}
+
+
+p{
+    color: #202124;
+    font-family: roboto,'Noto Sans Myanmar UI',arial,sans-serif;
+    padding-left:10.5%;
+    line-height: 1.4286;
+    font-size: 16px;
+    margin-bottom: 8%;
+}
+
+.container > *:last-child{
+    margin-bottom: 0;
+}
+
+.container > *:first-child{
+    margin-top: 0;
+}
+
+#firstname{
+    width :100%;
+    margin-left: 50px;
+}
+
+#lastname{
+    width: 80%;
+    margin-left: 80px;
+
+}
+
+#passwordMain1{
+    width :100%;
+    margin-left: 50px;
+}
+
+#passwordConfirm1{
+    width: 80%;
+    margin-left: 80px;
+
+}
+
+.helperTextFName{
+    font-size: medium;
+    margin-left: 50px;
+}
+
+.helperTextLName{
+    font-size: medium;
+    margin-left: 80px;
+}
+
+.helperTextUsername{
+    font-size: medium;
+    margin-left: 50px;
+}
+
+.helperTextMPassword{
+    font-size: medium;
+    margin-left: 50px;
+}
+
+.helperTextCPassword{
+    font-size: medium;
+    margin-left: 80px;
+}
